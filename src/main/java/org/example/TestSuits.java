@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-public class Testsuit_calss {
+public class TestSuits{
 
     protected static WebDriver driver;
     @BeforeMethod
