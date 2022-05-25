@@ -68,14 +68,11 @@ public class Testsuit_calss {
         ClicableElement(By.id("register-button"));
 
         String expectedMessage = "Your registration completed";
+
         String actualMessage = driver.findElement(By.className("result")).getText();
+
         Assert.assertEquals(actualMessage,expectedMessage,"regstration not complected");
-        //if (expectedMessage.equals(actualMessage)) {
-        // System.out.println("Your registration completed");
-        // } else {
-        //  System.out.println("Your registration not completed");
-        //}
-        //driverWaitelementToBeClickable(100, By.ByXPath("//div/a[@class=\"button-1 register-continue-bu
+
         driver.findElement(By.xpath("//div/a[@class=\"button-1 register-continue-button\"]")).click();
 
     }
